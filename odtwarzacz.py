@@ -34,9 +34,9 @@ class App (QWidget):
     @pyqtSlot()
 
 
-    def click(self): #funkcjaktora sie wywołuje jak wciśniesz cyferke
-        button = self.sender() #jakis rzycisk wywolal funkcje
-        self.textbox.setText(button.text()) #ustawiasz zamiast tego cyferke z guziczka
+    def click(self): 
+        button = self.sender() 
+        self.textbox.setText(button.text()) 
 
     def productclick(self):
         if self.buttonplay.isChecked():
@@ -1993,7 +1993,7 @@ class App (QWidget):
 
         self.show()
 
-if __name__=='__main__': #jezeli plik z ktorego uruchamiam jest głłówny
+if __name__=='__main__':
     app = QApplication(sys.argv)
     ex = App()
     sys.exit(app.exec())
